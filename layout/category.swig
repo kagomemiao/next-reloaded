@@ -6,28 +6,18 @@
 
 {% block content %}
 
-  {######################}
-  {### CATEGORY BLOCK ###}
-  {######################}
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <{% if theme.seo %}h2{% else %}h1{% endif %}>{#
-        #}{{ page.category }}{#
-        #}<small>{{  __('title.category')  }}</small>
-        </{% if theme.seo %}h2{% else %}h1{% endif %}>
-      </div>
-
-      {% for post in page.posts %}
-        {{ post_template.render(post) }}
-      {% endfor %}
+  <section id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        {{ page.category }}
+        <small>{{  __('title.category')  }}</small>
+      </h2>
     </div>
 
-  </div>
-  {##########################}
-  {### END CATEGORY BLOCK ###}
-  {##########################}
+    {% for post in page.posts %}
+      {{ post_template.render(post) }}
+    {% endfor %}
+  </section>
 
   {% include '_partials/pagination.swig' %}
 
