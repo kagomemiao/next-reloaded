@@ -25,7 +25,9 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> {{ partial('_partials/header.swig', {}, {cache: theme.cache.enable}) }} </div>
+      <canvas></canvas>
+      <div class="header-inner"> {{ partial('_partials/header.swig', {}, {cache: theme.cache.enable}) }} 
+      </div>
     </header>
 
     {% include '_third-party/github-banner.swig' %}
@@ -93,5 +95,6 @@
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
   {% include '_third-party/bookmark.swig' %}
+  <script type="text/javascript" src="/js/src/canvasline.js"></script>
 </body>
 </html>
