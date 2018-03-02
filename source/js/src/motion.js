@@ -51,27 +51,27 @@ $(document).ready(function () {
     this.el.velocity('stop').velocity(this.status[status]);
   };
 
-var sidebarToggleLine1st = new SidebarToggleLine({
-  el: '.sidebar-toggle-line-first',
-  status: {
-    arrow: {width: '60%', rotateZ: '45deg', top: '2px', left: '50%'},
-    close: {width: '100%', rotateZ: '-45deg', top: '5px'}
-  }
-});
-var sidebarToggleLine2nd = new SidebarToggleLine({
-  el: '.sidebar-toggle-line-middle',
-  status: {
-    arrow: {width: '90%'},
-    close: {opacity: 0}
-  }
-});
-var sidebarToggleLine3rd = new SidebarToggleLine({
-  el: '.sidebar-toggle-line-last',
-  status: {
-    arrow: {width: '60%', rotateZ: '-45deg', top: '-2px', left: '50%'},
-    close: {width: '100%', rotateZ: '45deg', top: '-5px'}
-  }
-});
+  var sidebarToggleLine1st = new SidebarToggleLine({
+    el: '.sidebar-toggle-line-first',
+    status: {
+      arrow: {width: '50%', rotateZ: '-45deg', top: '2px'},
+      close: {width: '100%', rotateZ: '-45deg', top: '5px'}
+    }
+  });
+  var sidebarToggleLine2nd = new SidebarToggleLine({
+    el: '.sidebar-toggle-line-middle',
+    status: {
+      arrow: {width: '90%'},
+      close: {opacity: 0}
+    }
+  });
+  var sidebarToggleLine3rd = new SidebarToggleLine({
+    el: '.sidebar-toggle-line-last',
+    status: {
+      arrow: {width: '50%', rotateZ: '45deg', top: '-2px'},
+      close: {width: '100%', rotateZ: '45deg', top: '-5px'}
+    }
+  });
 
   sidebarToggleLines.push(sidebarToggleLine1st);
   sidebarToggleLines.push(sidebarToggleLine2nd);
@@ -98,7 +98,7 @@ var sidebarToggleLine3rd = new SidebarToggleLine({
       $(document)
         .on('sidebar.isShowing', function () {
           NexT.utils.isDesktop() && $('body').velocity('stop').velocity(
-            {paddingLeft: SIDEBAR_WIDTH},
+            {paddingRight: SIDEBAR_WIDTH},
             SIDEBAR_DISPLAY_DURATION
           );
         })
@@ -164,7 +164,7 @@ var sidebarToggleLine3rd = new SidebarToggleLine({
       this.sidebarEl.trigger('sidebar.isShowing');
     },
     hideSidebar: function () {
-      NexT.utils.isDesktop() && $('body').velocity('stop').velocity({paddingLeft: 0});
+      NexT.utils.isDesktop() && $('body').velocity('stop').velocity({paddingRight: 0});
       this.sidebarEl.find('.motion-element').velocity('stop').css('display', 'none');
       this.sidebarEl.velocity('stop').velocity({width: 0}, {display: 'none'});
 
