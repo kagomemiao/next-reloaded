@@ -1,6 +1,6 @@
 {% macro render(post) %}
 
-  <article class="post post-type-{{ post.type | default('normal') }}" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-{{ post.type | default('archive') }}" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
       <div class="post-meta" style="position: relative">
         <time class="post-time" itemprop="dateCreated"

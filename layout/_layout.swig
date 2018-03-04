@@ -25,9 +25,10 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <canvas></canvas>
+      
       <div class="header-inner"> {{ partial('_partials/header.swig', {}, {cache: theme.cache.enable}) }} 
       </div>
+      <canvas></canvas>
     </header>
 
     {% include '_third-party/github-banner.swig' %}
@@ -96,5 +97,12 @@
   {% include '_third-party/exturl.swig' %}
   {% include '_third-party/bookmark.swig' %}
   <script type="text/javascript" src="/js/src/canvasline.js"></script>
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+  <script>
+    $("body").backstretch("/images/bgi.png")
+  </script> -->
+<!--   <div class="backstretch">
+    <img id="bgi" src="/images/bgi.png">
+  </div> -->
 </body>
 </html>
