@@ -929,8 +929,7 @@ vendors:
   # valine comment
   # Example: https://cdn.jsdelivr.net/npm/valine@1.1.8/dist/Valine.min.js
   valine:
-
-
+    
 # Assets
 css: css
 js: js

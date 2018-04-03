@@ -28,7 +28,7 @@
       
       <div class="header-inner"> {{ partial('_partials/header.swig', {}, {cache: theme.cache.enable}) }} 
       </div>
-      <canvas></canvas>
+      <canvas class="canvas-line"></canvas>
     </header>
 
     {% include '_third-party/github-banner.swig' %}
