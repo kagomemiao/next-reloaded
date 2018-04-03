@@ -8,6 +8,7 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    <div class="overlay"></div>
     {% if theme.sidebar.onmobile %}
       <div id="sidebar-dimmer"></div>
     {% endif %}

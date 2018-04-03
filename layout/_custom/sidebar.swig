@@ -25,3 +25,19 @@ return i;
 }
 show_date_time();
 </script>
+<div class="player-container">
+<div id="side-aplayer">> 听首歌吧 <</div>
+</div>
+<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+<div class="aplayer"
+    data-id="64005063"
+    data-server="netease"
+    data-type="playlist"
+    data-order="random"
+    data-list-max-height="200px"
+    data-theme="#777777"
+    data-list-folded="true"
+    data-volume=“0.2”
+</div>
+<script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
