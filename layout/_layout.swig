@@ -30,7 +30,6 @@
     </header>
 
     {% include '_third-party/github-banner.swig' %}
-
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
