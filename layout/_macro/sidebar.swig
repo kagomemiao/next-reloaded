@@ -8,10 +8,10 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    <div class="overlay"></div>
     {% if theme.sidebar.onmobile %}
       <div id="sidebar-dimmer"></div>
     {% endif %}
+    <div class="overlay"></div>
     <div class="sidebar-inner">
 
       {% set display_toc = is_post and theme.toc.enable or is_page and theme.toc.enable %}
