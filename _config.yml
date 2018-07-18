@@ -550,10 +550,10 @@ needmoreshare2:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: -usglpYEnx0tLQ1vNoINPByqOZr9ycpDCTV6jnRogKs
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-89378418-3
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
